@@ -1,0 +1,245 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .section {
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 144, 14, 0.1)
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 200px;
+    }
+    
+    nav ul {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    nav li {
+        list-style: none;
+        margin-left: 50px;
+    }
+    
+    .header-info {
+        text-align: center;
+    }
+    
+    .title {
+        font-weight: 700;
+        font-size: 64px;
+    }
+    
+    .discription {
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    
+    .header-info button {
+        background: #FF900E;
+        border-radius: 8px;
+        margin-top: 32px;
+        padding: 10px;
+    }
+    
+    .banner {
+        margin-left: ;
+        border-radius: 8px;
+        width: 1000px;
+        margin-left: 180px;
+        margin-top: 20px;
+    }
+    
+    hr {
+        margin-top: 20px;
+    }
+    
+    .multify-image {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 280px;
+        margin-top: 85px;
+    }
+    
+    .multify-image-info {
+        display: flex;
+    }
+    
+    .multify-image img {
+        margin-left: 20px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .Multify-discription {
+        margin-top: 200px;
+        margin-left: 30px;
+    }
+    
+    .span-1 {
+        font-weight: 500;
+        font-size: 45px;
+        color: #727272;
+        font-family: 'Work Sans';
+    }
+    
+    .span-2 {
+        font-weight: 700;
+        font-size: 45px;
+        color: #131313;
+    }
+    
+    .span-3 {
+        color: #FF900E;
+        font-size: 45px;
+        font-weight: 700;
+    }
+    
+    .next-discription {
+        font-weight: 400;
+        font-size: 16px;
+        color: #727272;
+    }
+    
+    .btn-class {
+        top: 32px;
+        background-color: #FF900E;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .third-step {
+        display: flex;
+        margin-left: 200px;
+        margin-top: 80px;
+    }
+    
+    .third-step div {
+        margin-top: 20px;
+    }
+    
+    .third-title {
+        width: 586px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.06);
+    }
+    
+    .architect {
+        margin-left: 30px;
+        margin-top: 10px;
+        width: 800px;
+        height: 500px;
+        background: url(successful-business-concept-businesswoman-are-smiling-standing-with-crossed-arms-office.jpg);
+        border-radius: 8px;
+        margin-right: 180px;
+    }
+    
+    .btn-3 {
+        position: relative;
+        width: 150px;
+        height: 100px;
+        background: #FF900E;
+        border-radius: 8px;
+        margin-left: 750px;
+        margin-top: -35px;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    
+    .Experience {
+        font-size: 12px;
+        color: #FFFFFF;
+    }
+    
+    .some-facts {
+        margin-left: 230px;
+        margin-top: 100px;
+    }
+    
+    .some-facts p {
+        font-weight: 300;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    
+    .icon-png {
+        display: flex;
+        margin-left: 250px;
+    }
+    
+    .icon-png div {
+        margin-left: 45px;
+        margin-top: 65px;
+        border: 1px solid #FF900E;
+    }
+    
+    .icon-png h1 {
+        text-align: center;
+        margin: 20px 18px;
+    }
+    
+    .icon-png p {
+        text-align: center;
+        margin-top: -20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .icon-png img {
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    
+    .Sponspors {
+        text-align: center;
+        margin-top: 100px;
+    }
+    
+    .Sponspors p {
+        margin-top: 25px;
+        color: #727272;
+    }
+    
+    .social-media {
+        margin-top: 30px;
+        margin-left: 90px;
+    }
+    
+    .social-media img {
+        margin-left: 40px;
+    }
+    
+    .image-1 {
+        color: #727272;
+        `
+    }
+    /* .footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: red;
+        color: white;
+        text-align: center; */
+    /* } */
+    
+    .footer {
+        text-align: center;
+        margin: 40px 60px;
+        background: #FFF4E7;
+        padding: 30px 30px;
+    }
+    
+    .footer-title {
+        justify-content: center;
+        align-items: center;
+    }

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- header section start -->
+    <header class="bg-sky-300 flex item-center justify-between mt-5 w-full mx-auto px-16 py-8">
+        <div>
+            <h1 class="text-4xl font-bold">Interactive</h1>
+            <p class="text-3xl ">Geometry Genius</p>
+        </div>
+        <div>
+            <a href="blog.html"><button class="btn btn-primary px-5">Blog</button> </a>
+        </div>
+    </header>
+
+    <!-- main section start -->
+    <main>
+        <section class="flex flex-col md:flex-row lg:flex-row lg:px-12 my-5">
+            <div class=" w-[70%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-[70%] h-30 mt-3" src="images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 id="title-triangle" class=" font-samibold text-center text-3xl">Triangle</h2>
+                        <p>Area (A) = 0.5 x b x h</p>
+                        <div class="flex mt-5 px-10 ">
+                            <input id="first-inputField" class="bg-gray-200 w-24 px-3" type="text" placeholder="b">
+                            <span class="mx-2">cm</span>
+                            <input id="second-inputField" class="bg-gray-200 w-24 px-3" type="text" placeholder="h">
+                            <span class="mx-2">cm</span>
+                        </div>
+                        <div class="mt-3">
+                            <button id="btn-triangle" class="btn btn-primary px-28 py-2">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-[70%] h-30 mt-3" src="images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 id="title-rectangle" class=" font-samibold text-center text-3xl">Rectangle</h2>
+                        <p>Area (A) = w x I</p>
+                        <div class="flex mt-5 px-10 ">
+                            <input id="rectangle-input" class="bg-gray-200 w-24 px-3" type="text" placeholder="b">
+                            <span class="mx-2">cm</span>
+                            <input id="rectanglesecond-input" class="bg-gray-200 w-24 px-3" type="text" placeholder="h">
+                            <span class="mx-2">cm</span>
+                        </div>
+                        <div class="mt-3">
+                            <button id="btn-rectangle" class="btn btn-primary px-28 py-2">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-[70%] h-30 mt-3" src="images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 id="title-Parallelogram" class=" font-samibold text-center text-3xl">Parallelogram</h2>
+                        <p>Area (A) = b x h</p>
+                        <p>b=10cm, h=12cm</p>
+                        <div class="flex mt-5 px-10 ">
+                            <input id="Parallelogram-input" class="bg-gray-200 w-24 px-3" type="text" placeholder="b">
+                            <span class="mx-2">cm</span>
+                            <input id="ParallelogramSecond-input" class="bg-gray-200 w-24 px-3" type="text" placeholder="h">
+                            <span class="mx-2">cm</span>
+                        </div>
+                        <div class="mt-3">
+                            <button id="btn-parallelogram" class="btn btn-primary px-28 py-2">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-[70%] h-30 mt-3" src="images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 id="title-rhombus" class=" font-samibold text-center text-3xl">Rhombus</h2>
+                        <p>Area (A) = 0.5 x d <sub>1</sub> x d <sub>2</sub></p>
+                        <p>d <sub>1</sub> = 16cm, d <sub>2</sub> = 8cm</p>
+                        <div class="flex mt-5 px-10 ">
+                            <input id="rhombus-input" class="bg-gray-200 w-24 px-3" type="text" placeholder="b">
+                            <span class="mx-2">cm</span>
+                            <input id="rhombus-input2" class="bg-gray-200 w-24 px-3" type="text" placeholder="h">
+                            <span class="mx-2">cm</span>
+                        </div>
+                        <div class="mt-3">
+                            <button id="btn-rhombus" class="btn btn-primary px-28 py-2">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-[70%] h-30 mt-3" src="images/pentagon.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 id="title-pentagon" class=" font-samibold text-center text-3xl">Pentagon</h2>
+                        <p>Area (A) = 0.5 x p x b</p>
+                        <p>p = 16cm, b = 10cm</p>
+                        <div class="flex mt-5 px-10 ">
+                            <input id="pentagon-input" class="bg-gray-200 w-24 px-3" type="text" placeholder="b">
+                            <span class="mx-2">cm</span>
+                            <input id="pentagon-input2" class="bg-gray-200 w-24 px-3" type="text" placeholder="h">
+                            <span class="mx-2">cm</span>
+                        </div>
+                        <div class="mt-3">
+                            <button id="btn-pentagon" class="btn btn-primary px-28 py-2">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-[70%] h-30 mt-3" src="images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 id="title-Ellipse" class=" font-samibold text-center text-3xl">Ellipse</h2>
+                        <p>Area (A) = πab</p>
+                        <p>a = 10cm, b = 4cm</p>
+                        <div class="flex mt-5 px-10 ">
+                            <input id="Ellipse-input" class="bg-gray-200 w-24 px-3" type="text" placeholder="b">
+                            <span class="mx-2">cm</span>
+                            <input id="Ellipse-input2" class="bg-gray-200 w-24 px-3" type="text" placeholder="h">
+                            <span class="mx-2">cm</span>
+                        </div>
+                        <div class="mt-3">
+                            <button id="btn-Ellipse" class="btn btn-primary px-28 py-2">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" w-full md:w-[30%] lg:w-[30] mx-auto mt-5">
+                <h1 class="text-3xl text-center font-bold">Area Calculation</h1>
+                <div class="overflow-x-auto">
+                    <table class="table w-full mt-3">
+                        <tbody id="table-field">
+                            <!-- <tr>
+                                <td>1</td>
+                                <td>name</td>
+                                <td>multify value</td>
+                                <td>btn</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- js file -->
+    <script src="js/multify.js"></script>
+</body>
+
+</html>
