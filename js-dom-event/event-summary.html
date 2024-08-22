@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Dom-Summary</title>
+</head>
+
+<body>
+
+    <h1>Final Dom Events Summary</h1>
+    <h2 id="handle-status">Default text</h2>
+    <p id="input-field">Default input text</p>
+    <input id="input-text" type="text">
+    <button id="btn-update">Update</button>
+    <br>
+    <br>
+
+    <button onclick="handleOnclick()">handle event by add onclick function </button>
+    <button id="even-listener"> handle by add event listener</button>
+    <script>
+        function handleOnclick() {
+            const handleStatus = document.getElementById('handle-status');
+            handleStatus.innerText = 'handle by function attached onclick';
+            // console.log('button clicked')
+        }
+
+        document.getElementById('even-listener').addEventListener('click', function() {
+            const handleStatus = document.getElementById('handle-status');
+            handleStatus.innerText = 'text update by add event listener'
+        })
+
+        document.getElementById('btn-update').addEventListener('click', function() {
+            const inputButtonUpdate = document.getElementById('input-text');
+            const inputText = inputButtonUpdate.value;
+
+            const p = document.getElementById('input-field');
+            p.innerText = inputText;
+            inputButtonUpdate.value = '';
+
+        })
+    </script>
+
+
+</body>
+
+</html>

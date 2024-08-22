@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-dom-event</title>
+</head>
+
+<body>
+    <h1 onclick="console.log('click the heading')">Dom ar ajke special events</h1>
+    <button onclick="console.log(65)">dubble click me</button>
+    <button onclick="console.log(7)">click me</button>
+    <button onclick="document.body.style.backgroundColor='yellow'">make yellow</button> <br>
+    <button onclick="makeRed()">make Red</button>
+    <button id="make-blue">make blue</button>
+
+    <button id="make-purple">make purple</button>
+    <BUtton id="make-pink">Make pink</BUtton>
+    <button id="make-green">make green</button>
+    <button id="make-goldenrod">make-goldenrod</button>
+
+    <script src=" js/events.js "></script>
+    <script>
+        // const makePurple = document.getElementById('make-purple');
+        // makePurple.onclick = function purple() {
+        //     document.body.style.backgroundColor = 'purple'
+        // }
+
+        const makePink = document.getElementById('make-pink');
+        makePink.addEventListener = ('click', makePinkStyle);
+
+        function makePinkStyle() {
+            document.body.style.backgroundColor = 'pink'
+            console.log(makePinkStyle);
+        }
+
+        const makePurple = document.getElementById("make-purple").addEventListener('click', function hello() {
+            makePurple.style.backgroundColor = "red"
+        })
+    </script>
+</body>
+
+</html>

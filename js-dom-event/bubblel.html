@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event bubble</title>
+</head>
+
+<body>
+    <h1 id="list-container">Explore Event bubble</h1>
+    <section>
+        <ul id="list-item">
+            <li id="item-1">Lorem, ipsum.</li>
+            <li id="item-2">Deserunt, quidem.</li>
+            <li id="item-3">Quidem, qui.</li>
+            <li id="item-4">Ea, eligendi.</li>
+            <li id="item-5">Eveniet, enim.</li>
+            <li id="item-6">Similique, laudantium!</li>
+        </ul>
+    </section>
+    <script>
+        document.getElementById('item-1').addEventListener('click', function() {
+            console.log('click item 1');
+        })
+
+        document.getElementById('list-item').addEventListener('click', function() {
+            console.log('click ul list');
+        })
+
+        document.getElementById('list-container').addEventListener('click', function() {
+            console.log('section container clicked');
+        })
+    </script>
+
+</body>
+
+</html>

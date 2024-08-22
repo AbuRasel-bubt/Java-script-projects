@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deleteGet</title>
+</head>
+
+<body>
+    <h1>Explore deleteGet</h1>
+    <section>
+        <ul id="item-container">
+            <li class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Excepturi, sapiente esse!</li>
+            <li class="item">Quasi, error at.</li>
+            <li class="item">Inventore, neque voluptatibus.</li>
+            <li class="item">Aperiam, at eligendi.</li>
+            <li class="item">Soluta, quasi libero!</li>
+        </ul>
+        <button id="btn-add-item">Add item</button>
+    </section>
+    <script>
+        // document.getElementById('item-container').addEventListener('click', function() {
+        //     console.log('hello item container');
+        // })
+        // document.getElementsByClassName('item').addEventListener('click', function(event) {
+        //     console.log('item list');
+        // })
+        const items = document.getElementsByClassName('item');
+        for (const item of items) {
+            item.addEventListener('click', function(event) {
+                console.log(event.target.parentNode);
+            })
+        }
+
+
+        document.getElementById('btn-add-item').addEventListener('click', function() {
+            const listContainer = document.getElementById('item-container');
+            const li = document.createElement('li');
+            li.innerText = 'brand new item added';
+            li.classList.add('item');
+            li.style.backgroundColor = "blue"
+            listContainer.appendChild(li);
+
+        })
+    </script>
+</body>
+
+</html>

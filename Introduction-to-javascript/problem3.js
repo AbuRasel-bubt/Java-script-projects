@@ -1,0 +1,1 @@
+var raselScore = 85;

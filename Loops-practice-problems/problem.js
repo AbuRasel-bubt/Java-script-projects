@@ -1,0 +1,10 @@
+var mathMarks = 75.25;
+var biologyMarks = 65;
+var chemistryMarks = 80;
+var physicMarks = 35.45;
+var banglaMarks = 99.50;
+var totalMarks = mathMarks + biologyMarks + chemistryMarks + physicMarks + banglaMarks;
+console.log(totalMarks);
+var average = totalMarks / 5;
+var averageToDecimal = average.toFixed(2);
+console.log(averageToDecimal);
