@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of dom</title>
+    <link rel="stylesheet" href="Styles/style.css">
+
+
+    <style>
+        li {
+            color: tomato;
+        }
+        
+        #fruit-title {
+            color: black;
+        }
+        
+        .important-places {
+            color: blueviolet;
+        }
+        
+        .fruits-container li {
+            color: black;
+        }
+        
+        .places-container li {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my Dom</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus delectus labore alias ducimus? Ipsam aspernatur minima veritatis praesentium, a non cumque ipsum in consequuntur sit, deleniti hic, qui voluptate assumenda?</p>
+    </header>
+    <main id="main-section">
+        <section class="">
+            <h1>My Awesome DOM de baba</h1>
+            <ul>
+                <li class="important-places">Jalali Set</li>
+                <li class="important-places">Shafayat</li>
+                <li class="important-places">Bonobas</li>
+                <li>Dom de re baba</li>
+            </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="fruit-title" class="first-heading bg-green ">Fruits I like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li>
+            </ul>
+        </section id="places-section">
+        <section class="places-container" id="places-container">
+            <h1>places to i like to visit</h1>
+            <ul id="places-list">
+                <li>Soundoban</li>
+                <li>BandorBan</li>
+                <li>kataban</li>
+                <li>Shalban</li>
+            </ul>
+
+        </section>
+    </main>
+    <!-- <script src="js/Dom.js"></script> -->
+    <script src="js/append.js"></script>
+    <script src="js/styleIn.js"></script>
+
+    <script>
+        const places = document.getElementsByClassName('important-places');
+        for (const place of places) {
+            // console.log(place.innerText);
+            u
+        }
+
+        const fruitsTitle = document.getElementById('fruit-title');
+        fruitsTitle.innerText = 'Fruits changed by js';
+        console.log(fruitsTitle);
+
+
+        const someLi = document.querySelectorAll('.places-container li');
+        // console.log(someLi);
+        for (const li of someLi) {
+            // console.log(li.innerText);
+        }
+    </script>
+
+</body>
+
+</html>
